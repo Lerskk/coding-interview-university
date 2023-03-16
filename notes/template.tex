@@ -1,0 +1,38 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Coding interview university}}
+\author{\huge{Fausto Leoni}}
+\date{March 2023 - Present}
+
+\usepackage{parskip}
+\setlength{\parindent}{10pt}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Asimptotic analysis}
+
+Asimptotic analysis is a way to messure how fast or slow a specific algorithm run as the input increase to infinity. It abstract itself from the idea of hardward, software or implementation in which the program is running. Making easy to understand how efficien is an algorithm running in different quind of environment. 
+
+There are three letters: the best case scenario is $\Omega$(omega), worst case scenario $\mathcal{O}$(Big O) and when they are the same we use $\Theta$(theta). Let's see an example.
+
+\subsection*{Examples}
+\subsubsection{Length of string}
+Let's see the case of an algorithm that iterate a string and return the length. It goes letter by letter and add one to a counter, so we can say that in the worst case scenario it has to walk the length of the string, that we call n. So the worst case scenario is $\mathcal{O}$(n), also we see that in the best case scenario you walk through the entire string to count the amount of letters making it $\Omega$(n). And because the best case and worst case are the same we also can say that the algorithm runs on $\Theta$(n).
+
+\subsubsection{Binary search}
+Now we analysis binary search which from an order list will search for a given element. It does by taking the element in the middle of the list and compare it with the element that we are looking for. If it's equal ends there, if it's greater than our number it grabs the less half of the list and repeat the process. Grabs the middle, compare and repeat untile it finds the element or the list has only one element.
+
+It's easy to see that the best case scenario is when the element that we are looking for is in the middle of the list, it makes the algorithm to run on $\Omega$(1). And what about the worst case, well when you check if the element is greater or less than the number you take half of the list, and repeat this prosses multiple times if necessary. So for each execution it half the length of the list, making it an logarithmic operation $\mathcal{O} (\log{}{n})$. Since $\Omega$ and $\mathcal{O}$ are not the same we don't have a $\Theta$.
+
+\end{document}

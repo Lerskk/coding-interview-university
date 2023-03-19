@@ -1,0 +1,4 @@
+\contentsline {chapter}{\numberline {1}Asymptotic analysis}{2}{chapter.1}%
+\contentsline {subsubsection}{Length of string}{2}{section*.3}%
+\contentsline {subsubsection}{Binary search}{2}{section*.4}%
+\contentsfinish 

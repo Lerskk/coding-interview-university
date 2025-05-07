@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/lerskk/code/coding-interview-university/code/build",
+  "command": "/nix/store/f0m6caffiykyvsjim9376a3hx2yj2ghj-gcc-wrapper-14.2.1.20250322/bin/gcc    -o CMakeFiles/algorithsm.dir/main.c.o -c /home/lerskk/code/coding-interview-university/code/main.c",
+  "file": "/home/lerskk/code/coding-interview-university/code/main.c",
+  "output": "CMakeFiles/algorithsm.dir/main.c.o"
+}
+]

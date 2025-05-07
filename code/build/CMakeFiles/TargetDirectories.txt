@@ -1,0 +1,3 @@
+/home/lerskk/code/coding-interview-university/code/build/CMakeFiles/algorithsm.dir
+/home/lerskk/code/coding-interview-university/code/build/CMakeFiles/edit_cache.dir
+/home/lerskk/code/coding-interview-university/code/build/CMakeFiles/rebuild_cache.dir

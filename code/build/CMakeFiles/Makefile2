@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /home/lerskk/code/coding-interview-university/code/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/algorithsm.dir/all
+all: CMakeFiles/libds.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/algorithsm.dir/codegen
+codegen: CMakeFiles/libds.dir/codegen
+codegen: CMakeFiles/main.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +77,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/algorithsm.dir/clean
+clean: CMakeFiles/libds.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/algorithsm.dir
+# Target rules for target CMakeFiles/libds.dir
 
 # All Build rule for target.
-CMakeFiles/algorithsm.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithsm.dir/build.make CMakeFiles/algorithsm.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithsm.dir/build.make CMakeFiles/algorithsm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=1,2 "Built target algorithsm"
-.PHONY : CMakeFiles/algorithsm.dir/all
+CMakeFiles/libds.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libds.dir/build.make CMakeFiles/libds.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libds.dir/build.make CMakeFiles/libds.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=1,2 "Built target libds"
+.PHONY : CMakeFiles/libds.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/algorithsm.dir/rule: cmake_check_build_system
+CMakeFiles/libds.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lerskk/code/coding-interview-university/code/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/algorithsm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libds.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lerskk/code/coding-interview-university/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/algorithsm.dir/rule
+.PHONY : CMakeFiles/libds.dir/rule
 
 # Convenience name for target.
-algorithsm: CMakeFiles/algorithsm.dir/rule
-.PHONY : algorithsm
+libds: CMakeFiles/libds.dir/rule
+.PHONY : libds
 
 # codegen rule for target.
-CMakeFiles/algorithsm.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithsm.dir/build.make CMakeFiles/algorithsm.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=1,2 "Finished codegen for target algorithsm"
-.PHONY : CMakeFiles/algorithsm.dir/codegen
+CMakeFiles/libds.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libds.dir/build.make CMakeFiles/libds.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=1,2 "Finished codegen for target libds"
+.PHONY : CMakeFiles/libds.dir/codegen
 
 # clean rule for target.
-CMakeFiles/algorithsm.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithsm.dir/build.make CMakeFiles/algorithsm.dir/clean
-.PHONY : CMakeFiles/algorithsm.dir/clean
+CMakeFiles/libds.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libds.dir/build.make CMakeFiles/libds.dir/clean
+.PHONY : CMakeFiles/libds.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all: CMakeFiles/libds.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lerskk/code/coding-interview-university/code/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lerskk/code/coding-interview-university/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# codegen rule for target.
+CMakeFiles/main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lerskk/code/coding-interview-university/code/build/CMakeFiles --progress-num=3,4 "Finished codegen for target main"
+.PHONY : CMakeFiles/main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

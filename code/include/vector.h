@@ -11,7 +11,9 @@ typedef struct {
   int capacity;
 } GenericVector;
 
-GenericVector* create(size_t element_size, int capacity);
+GenericVector* vec_create(size_t element_size, int capacity);
+
+int vec_destroy(GenericVector** v);
 
 int vec_size(GenericVector* v);
 
@@ -19,7 +21,7 @@ int vec_capacity(GenericVector* v);
 
 bool vec_is_empty(GenericVector* v);
 
-void* vec_at(GenericVector* v);
+void* vec_at(GenericVector* v, const int index);
 
 int vec_push(GenericVector* v, const void* elem);
 
@@ -31,10 +33,16 @@ int vec_pop(GenericVector* v, void* out_elem);
 
 int vec_delete(GenericVector* v, const int index);
 
-int vec_remove(GenericVector* v, const void* elem);
+typedef int (*ComparisonFunc)(const void*, const void*);
 
-int vec_find(GenericVector* v, const void* elem);
+int vec_remove(GenericVector* v, const void* elem, ComparisonFunc);
+
+int vec_find(GenericVector* v, const void* elem, ComparisonFunc);
 
 int vec_resize(GenericVector* v, const int capacity);
+
+typedef void (*PrintFunc)(const void*);
+
+void vec_print(GenericVector* v, PrintFunc);
 
 #endif // VECTOR_H

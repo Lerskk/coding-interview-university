@@ -1,6 +1,9 @@
-CMakeFiles/main.dir/src/main.c.o: \
- /home/lerskk/code/coding-interview-university/code/src/main.c \
+CMakeFiles/vector_test.dir/example/generic_vector.c.o: \
+ /home/lerskk/code/coding-interview-university/code/example/generic_vector.c \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/stdc-predef.h \
+ /home/lerskk/code/coding-interview-university/code/include/vector.h \
+ /nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stddef.h \
+ /nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stdbool.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/stdio.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/bits/libc-header-start.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/features.h \
@@ -11,7 +14,6 @@ CMakeFiles/main.dir/src/main.c.o: \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/bits/long-double.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/gnu/stubs.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/gnu/stubs-64.h \
- /nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stddef.h \
  /nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stdarg.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/bits/types.h \
  /nix/store/pz6jgrfqyl2il2785a75vmwdp9vypv0j-glibc-2.40-66-dev/include/bits/typesizes.h \

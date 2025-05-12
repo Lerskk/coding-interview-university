@@ -1,4 +1,5 @@
 /home/lerskk/code/coding-interview-university/code/build/CMakeFiles/libds.dir
 /home/lerskk/code/coding-interview-university/code/build/CMakeFiles/main.dir
+/home/lerskk/code/coding-interview-university/code/build/CMakeFiles/vector_test.dir
 /home/lerskk/code/coding-interview-university/code/build/CMakeFiles/edit_cache.dir
 /home/lerskk/code/coding-interview-university/code/build/CMakeFiles/rebuild_cache.dir

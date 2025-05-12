@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =

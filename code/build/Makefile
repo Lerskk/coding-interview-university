@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/lerskk/code/coding-interview-university/code/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -142,6 +142,43 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named vector_test
+
+# Build rule for target.
+vector_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_test
+.PHONY : vector_test
+
+# fast build rule for target.
+vector_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_test.dir/build.make CMakeFiles/vector_test.dir/build
+.PHONY : vector_test/fast
+
+example/generic_vector.o: example/generic_vector.c.o
+.PHONY : example/generic_vector.o
+
+# target to build an object file
+example/generic_vector.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_test.dir/build.make CMakeFiles/vector_test.dir/example/generic_vector.c.o
+.PHONY : example/generic_vector.c.o
+
+example/generic_vector.i: example/generic_vector.c.i
+.PHONY : example/generic_vector.i
+
+# target to preprocess a source file
+example/generic_vector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_test.dir/build.make CMakeFiles/vector_test.dir/example/generic_vector.c.i
+.PHONY : example/generic_vector.c.i
+
+example/generic_vector.s: example/generic_vector.c.s
+.PHONY : example/generic_vector.s
+
+# target to generate assembly for a file
+example/generic_vector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_test.dir/build.make CMakeFiles/vector_test.dir/example/generic_vector.c.s
+.PHONY : example/generic_vector.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -200,6 +237,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... libds"
 	@echo "... main"
+	@echo "... vector_test"
+	@echo "... example/generic_vector.o"
+	@echo "... example/generic_vector.i"
+	@echo "... example/generic_vector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

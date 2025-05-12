@@ -10,5 +10,11 @@
   "command": "/nix/store/f0m6caffiykyvsjim9376a3hx2yj2ghj-gcc-wrapper-14.2.1.20250322/bin/gcc  -I/home/lerskk/code/coding-interview-university/code/include  -o CMakeFiles/main.dir/src/main.c.o -c /home/lerskk/code/coding-interview-university/code/src/main.c",
   "file": "/home/lerskk/code/coding-interview-university/code/src/main.c",
   "output": "CMakeFiles/main.dir/src/main.c.o"
+},
+{
+  "directory": "/home/lerskk/code/coding-interview-university/code/build",
+  "command": "/nix/store/f0m6caffiykyvsjim9376a3hx2yj2ghj-gcc-wrapper-14.2.1.20250322/bin/gcc  -I/home/lerskk/code/coding-interview-university/code/include  -o CMakeFiles/vector_test.dir/example/generic_vector.c.o -c /home/lerskk/code/coding-interview-university/code/example/generic_vector.c",
+  "file": "/home/lerskk/code/coding-interview-university/code/example/generic_vector.c",
+  "output": "CMakeFiles/vector_test.dir/example/generic_vector.c.o"
 }
 ]
